@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Table Layout Design</title>
+<style>
+th{
+background-color: lightgrey;
+}
+td{
+width: 90px;
+height: 15px;
+text-align: center;
+colspan: 1;
+rowspan: 1;
+}
+tr:nth-child(even){
+background-color: lightgreen;
+}
+table{
+border: 1px solid grey;
+}
+</style>
+</head>
+<body>
+<table align="center">
+<tr><th>Id</th><th>Name</th><th>Major</th></tr>
+<tr><td>1001</td><td>Keerthi</td><td>ECE</td></tr>
+<tr><td>1002</td><td>Mahi</td><td>Mech</td></tr>
+<tr><td>1003</td><td>Abi</td><td>ECE</td></tr>
+<tr><td>1004</td><td>Gokul</td><td>IT</td></tr>
+<tr><td>1005</td><td>Naveen</td><td>CSE</td></tr>
+</table>
+</body>
+</html>

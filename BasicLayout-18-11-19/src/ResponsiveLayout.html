@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout Design</title>
+<style>
+.container{
+width:100%;
+}
+
+div.div1{
+background-color: blue;
+position: absolute;
+}
+div.div2{
+background-color: green;
+position: absolute;
+}
+div.div3{
+background-color: red;
+position: absolute;
+}
+div.div4{
+background-color: yellow;
+position: absolute;
+}
+
+@media only screen and (max-width: 600px){
+
+.div1{
+left : 2%;
+right : 2%;
+width: 92%;
+height: 10%;
+}
+.div2{
+
+top : 14%;
+left : 2%;
+right : 2%;
+width: 92%;
+height: 10%;
+}
+.div3{
+top:26%;
+left : 2%;
+right : 2%;
+width: 92%;
+height: 36%;
+}
+.div4{
+top: 62%;
+left : 2%;
+right : 2%;
+bottom: 98%;
+width: 92%;
+height: 36%;
+/* width: 100%;
+padding: 20px;
+line-height: 100px; */
+}
+}
+
+@media only screen and (min-width: 601px ) and (max-width: 960px){
+.div1{
+top:2%;
+left : 2%;
+right : 2%;
+width: 96%;
+height: 10%;
+}
+.div2{
+top : 14%;
+left : 2%;
+right : 2%;
+width: 96%;
+height: 10%;
+}
+.div3{
+top:26%;
+left : 2%;
+right : 49%;
+bottom:2%;
+width: 47%;
+height: 72%;
+}
+.div4{
+top:26%;
+left : 51%;
+right : 2%;
+bottom: 2%;
+width: 47%;
+height: 72%;
+}
+}
+
+@media only screen and (min-width: 961px ) {
+div.div1{
+top:2%;
+left : 2%;
+right : 2%;
+width: 96%;
+height: 26%;
+}
+div.div2{
+top: 29%;
+left : 2%;
+width: 32%;
+height: 68%;
+}
+div.div3{
+top: 29%;
+left : 35%;
+width: 32%;
+height: 68%;
+}
+div.div4{
+top: 29%;
+left: 68%;
+right : 2%;
+width: 30%;
+height: 68%;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+	<div class="div4"></div>
+</div>
+</body>
+</html>
